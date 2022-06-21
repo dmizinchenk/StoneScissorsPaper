@@ -9,8 +9,8 @@ namespace StoneScissorsPaper
 
         void Compare(Choise userChoise)
         {
-            Choise compChoise = (Choise)(new Random()).Next(0, 2);
-            lblOut.Text = "Компьютер показывает: " + compChoise.ToString();
+            Choise compChoise = (Choise)(new Random()).Next(0, 3);
+            lblOut.Text = "ГЉГ®Г¬ГЇГјГѕГІГҐГ° ГЇГ®ГЄГ Г§Г»ГўГ ГҐГІ: " + compChoise.ToString();
             if(userChoise == compChoise)
                 return;
             else if ((userChoise < compChoise) && compChoise - userChoise == 1
@@ -28,17 +28,17 @@ namespace StoneScissorsPaper
 
         private void btnStone_Click(object sender, EventArgs e)
         {
-            Compare(Choise.Камень);
+            Compare(Choise.ГЉГ Г¬ГҐГ­Гј);
         }
 
         private void btnScissors_Click(object sender, EventArgs e)
         {
-            Compare(Choise.Ножницы);
+            Compare(Choise.ГЌГ®Г¦Г­ГЁГ¶Г»);
         }
 
         private void btnPaper_Click(object sender, EventArgs e)
         {
-            Compare(Choise.Бумага);
+            Compare(Choise.ГЃГіГ¬Г ГЈГ );
         }
     }
 }
